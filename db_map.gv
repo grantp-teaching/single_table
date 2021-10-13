@@ -1,0 +1,34 @@
+digraph G {
+
+	data;
+	data -> structured;
+	data -> unstructured;
+
+	unstructured -> images;
+	unstructured -> audio;
+	unstructured -> video;
+	unstructured -> docs;
+	docs -> word;
+	docs -> excel;
+	docs -> ppt;
+	docs -> pdf;
+	
+	structured -> relational;
+	subgraph cluster_sql{
+	relational -> postgresql;
+	relational -> mysql;
+	relational -> mssql;
+	relational -> oracle;
+	}
+		structured -> nonrelational;
+	subgraph cluster_nosql {
+	nonrelational -> keyvaluestores;
+	keyvaluestores -> redis;
+	
+	nonrelational -> column;
+	column -> DynamoDB;
+	
+	nonrelational -> document;
+	document -> mongodb;
+}	
+}
