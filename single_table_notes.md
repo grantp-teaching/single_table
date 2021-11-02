@@ -1,4 +1,4 @@
-Introduction {#sec:single-table-data-introduction}
+Introduction
 ============
 
 This week’s class covers the setup and usage of a single table. As a
