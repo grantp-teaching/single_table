@@ -79,9 +79,10 @@ undefined). **NOT** the same as a numeric zero or the empty string.
 
 Null “pollutes” other expressions. More generally, if any variable in an
 expression (other than a test for null) is null, then the expression is
-null: $$\begin{aligned}
-  1 + \mbox{null} & = \mbox{null} \\
-  1 + \mbox{null} - \mbox{null} & = \mbox{null} \end{aligned}$$
+null:
+
+	1 + NULL = NULL 
+	1 + NULL - NULL = 1 
 
 Must consider 3-value logic (true/false/null) rather than 2-value logic
 (true/false).
