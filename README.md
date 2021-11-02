@@ -1,8 +1,8 @@
-# Database Management Systems
+# Single-table data
 
 ## Notes and resources
 
-[Single-table data notes](dbms_single_table_notes.md)
+[Single-table notes](single_table_notes.md)
 
 
 
